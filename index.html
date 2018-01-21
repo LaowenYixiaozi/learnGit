@@ -1,0 +1,92 @@
+<html>
+<head>
+<title>统计图测试版</title>
+<script type="text/javascript" src="./js/fusioncharts.js"></script>
+<script type="text/javascript" src="./js/themes/fusioncharts.theme.fint.js"></script>
+
+<style>
+	.raphael-group-161-creditgroup{
+		display:none;
+	}
+</style>
+
+<script type="text/javascript">
+        window.onload=function(){
+        FusionCharts.ready(function(){
+            var revenueChart = new FusionCharts({
+                "type": "column2d",
+                "renderAt": "chartContainer",
+                "width": "500",
+                "height": "300",
+                "dataFormat": "json",
+                "dataSource":  {
+                    "chart": {
+                        "caption": "漯河市概况",
+                        "subCaption": "1-12月",
+                        "xAxisName": "Month",
+                        "yAxisName": "金额",
+                        "theme": "fint"
+                    },
+                    "data": [
+                        {
+                            "label": "\u4e00\u6708",
+                            "value": "420000",
+                            
+                        },
+                        {
+                            "label": "2月",
+                            "value": "810000"
+                        },
+                        {
+                            "label": "3月",
+                            "value": "720000"
+                        },
+                        {
+                            "label": "4月",
+                            "value": "550000"
+                        },
+                        {
+                            "label": "5月",
+                            "value": "910000"
+                        },
+                        {
+                            "label": "6月",
+                            "value": "510000"
+                        },
+                        {
+                            "label": "7月",
+                            "value": "680000"
+                        },
+                        {
+                            "label": "8月",
+                            "value": "620"
+                        },
+                        {
+                            "label": "9月",
+                            "value": "610000"
+                        },
+                        {
+                            "label": "10月",
+                            "value": "490000"
+                        },
+                        {
+                            "label": "11月",
+                            "value": "900000"
+                        },
+                        {
+                            "label": "12月",
+                            "value": "730000"
+                        }
+                    ]
+                }
+
+            });
+            revenueChart.render();
+        })
+        }
+	</script>
+</head>
+<body>
+  <div id="chartContainer">FusionCharts XT will load here!</div>
+</body>
+</html>
